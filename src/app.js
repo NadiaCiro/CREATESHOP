@@ -14,10 +14,10 @@ var corsOptions = {
     origin: 'http://127.0.0.1:4200',
     optionsSuccessStatus: 200 // For legacy browser support
 }
-app.use(cors())/*Api consumible, comunicar al front */
-
-app.use(express.json(corsOptions))/*Primero se recibe los datos se convierten a json o un objeto js y luego se pasa a las rutas */
-
+//app.use(cors())/*Api consumible, comunicar al front */
+app.use(cors(corsOptions));
+// app.use(express.json(corsOptions))/*Primero se recibe los datos se convierten a json o un objeto js y luego se pasa a las rutas */
+app.use(express.json());
 
 /*Rutas */
 app.use(indexRoutes)
