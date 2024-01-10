@@ -11,7 +11,7 @@ const app = express()
 
 
 var corsOptions = {
-    origin: 'http://127.0.0.1:4200',
+    origin: 'https://createshop.vercel.app',
     optionsSuccessStatus: 200 // For legacy browser support
 }
 
